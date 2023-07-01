@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Modern Chat</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="header">
+            <h1>Chat</h1>
+        </div>
+        <div class="messages-container">
+            <div id="messages" class="messages"></div>
+        </div>
+        <div class="message-form">
+            <div class="message-form-image">
+                <img src="https://forum.sa-mp.im/download/file.php?avatar=g81_1454153416.png" alt="User Image">
+            </div>
+            <input type="text" id="message" placeholder="Enter message">
+            <button type="submit" id="send-btn"><i class="fas fa-paper-plane"></i></button>
+            <div class="message-form-image">
+                <img src="https://www.pngitem.com/pimgs/m/500-5004003_recycle-bin-png-image-computer-recycle-bin-icon.png" alt="Recycle Bin">
+            </div>
+        </div>
+        <div id="name-box" class="name-box">
+            <form id="name-form" class="name-form">
+                <label for="name-input">Enter your name:</label>
+                <input type="text" id="name-input" name="name-input" placeholder="Your Name" required>
+                <button type="submit" id="name-submit-btn">Submit</button>
+            </form>
+        </div>
+        <div id="name-display" class="name-display"></div>
+    </div>
+    <script src="chat.js"></script>
+</body>
+</html>
